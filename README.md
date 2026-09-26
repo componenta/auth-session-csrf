@@ -1,8 +1,14 @@
-# Componenta Auth Session CSRF
+# Merged into componenta/auth-session-http
 
-CSRF protection bound to a Componenta `AuthSession`.
+The CSRF implementation from this repository is now part of
+`componenta/auth-session-http`.
 
-The synchronizer token is a domain-separated HMAC over the stable public
-session UUID and the current credential generation. No CSRF secret is stored
-in the session row, and rotating the session credential invalidates the
-previous CSRF token automatically.
+New namespace:
+
+```php
+Componenta\Auth\Session\Http\Csrf\AuthSessionCsrfTokenManager
+Componenta\Auth\Session\Http\Csrf\AuthSessionCsrfMiddleware
+```
+
+This repository is retained only as a migration pointer. It is no longer a
+standalone Composer package.
