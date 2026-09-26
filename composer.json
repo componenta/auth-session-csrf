@@ -6,9 +6,14 @@
     "require": {
         "php": "^8.4",
         "componenta/auth-session": "dev-main",
-        "componenta/http-csrf-middleware": "dev-main"
+        "componenta/http-csrf-middleware": "dev-main",
+        "psr/http-factory": "^1.0",
+        "psr/http-message": "^2.0",
+        "psr/http-server-handler": "^1.0",
+        "psr/http-server-middleware": "^1.0"
     },
     "require-dev": {
+        "nyholm/psr7": "^1.8",
         "phpstan/phpstan": "^2.1",
         "phpunit/phpunit": "^12.0"
     },
