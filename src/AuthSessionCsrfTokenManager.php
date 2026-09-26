@@ -39,7 +39,7 @@ final readonly class AuthSessionCsrfTokenManager implements CsrfTokenManagerInte
     }
 
     #[\Override]
-    public function getActive(): ?string
+    public function getActive(): string
     {
         return $this->token();
     }
